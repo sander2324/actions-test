@@ -31,4 +31,4 @@ jobs:
           
       - name: clang-format
         run: |
-          clang-format --dry-run --Werror src/*.c
+          clang-format --dry-run --Werror src/*.c src/*.h
