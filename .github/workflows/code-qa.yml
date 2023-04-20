@@ -31,4 +31,4 @@ jobs:
         
       - name: Run linter
         run: |
-          echo 'Hello, World!'
+          clang-format --dry-run --Werror src/*c src/*.h
