@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 
-jobs:
+jobs:sen de 12 en 27 jaar een profiel met hun skills a
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -31,4 +31,4 @@ jobs:
         
       - name: Run linter
         run: |
-          clang-format --dry-run --Werror src/*c src/*.h
+          clang-format --dry-run --Werror --style=file:.clang-format src/*c src/*.h
