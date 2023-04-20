@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 
-jobs:sen de 12 en 27 jaar een profiel met hun skills a
+jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
