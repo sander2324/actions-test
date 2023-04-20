@@ -1,0 +1,30 @@
+name: 'Code QA'
+
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    types:
+      - opened
+    branches:
+      - 'main'
+      
+      
+permissions:
+  contents: read
+
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup environment
+        run: |
+          echo 'Hello, World!'
