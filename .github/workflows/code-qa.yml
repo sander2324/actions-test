@@ -27,7 +27,7 @@ jobs:
         
       - name: Setup environment
         run: |
-          apt install clang-format
+          sudo apt install clang-format
           
       - name: clang-format
         run: |
